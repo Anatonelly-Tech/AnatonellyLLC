@@ -16,6 +16,8 @@ import { GiCargoShip } from 'react-icons/gi'; //transporte maritimo
 import { GiAirplaneDeparture } from 'react-icons/gi'; //transporte aéreo
 import { CiBoxes } from 'react-icons/ci'; //Serviços Alfandegários:
 import { GiHarborDock } from 'react-icons/gi'; //Serviços de Logística
+import { RiScrollToBottomLine } from 'react-icons/ri';
+import { RiArrowDownDoubleLine } from 'react-icons/ri';
 
 // Utils
 import { TitleLetter, Paragraph, Lists, Img } from '@/utils/animations';
@@ -35,19 +37,23 @@ const index = () => {
   return (
     <div
       id='AnatonellyLLC'
-      className='bg-neutral-200 w-full h-auto flex flex-col -z-10  justify-center items-center'
+      className=' w-full h-auto flex flex-col -z-10  justify-center items-center'
     >
-      <div className='w-full flex flex-col items-start bg-neutral-200 p-5'>
-        <span
-          id='TitleLetter'
-          className=' flex items-start justify-start font-black lg:text-6xl md:text-6xl sm:text-4xl xs:text-2xl xxs:xl text-start '
-        >
-          Anatonelly LLC
-        </span>
+      <div className='min-h-screen w-full flex flex-col items-center justify-center bg-Anatonelly-Primary p-5'>
+        <img
+          src='./AnatonellyLLC/AnatonellyLLC.svg'
+          className='w-1/3 h-2/5 filter animate-dropShadowPulse'
+          alt=''
+          srcset=''
+        />
+        <div className='animate-bounce text-center flex flex-col items-center justify-center gap-2 absolute mt-10 top-3/4'>
+          <RiScrollToBottomLine className='text-4xl' />
+          <RiArrowDownDoubleLine className='text-4xl' />
+        </div>
       </div>
-      <div className='h-auto w-full bg-Anatonelly-Primary flex flex-col justify-center items-center '>
-        <div className='flex flex-col justify-center items-start gap-10 p-10'>
-          <div className='w-full flex flex-col items-start'>
+      <div className=' w-full bg-Anatonelly-Primary flex flex-col justify-center items-center '>
+        <div className='min-h-screen flex flex-col justify-center items-start gap-10 p-10'>
+          <div className=' w-full flex flex-col items-start'>
             <span
               id='Paragraph'
               className='text-white text-xl font-bold inline-block lg:text-5xl md:text-4xl sm:text-3xl xs:text-2xl '
