@@ -54,22 +54,21 @@ const index = () => {
           <RiArrowDownDoubleLine className='text-4xl' />
         </div>
       </div>
-      <div className=' w-full bg-Anatonelly-Primary flex flex-col justify-center items-center '>
-        <div className='min-h-screen flex flex-col justify-center items-start gap-10 p-10'>
+      <div className='  bg-Anatonelly-Primary w-full h-auto  flex flex-col items-center justify-around '>
+        <div className='min-h-screen w-full flex flex-col items-center justify-start gap-10'>
           <div className=' w-full flex flex-col items-start'>
             <span
               id='Paragraph'
-              className='text-white text-xl font-bold inline-block lg:text-5xl md:text-4xl sm:text-3xl xs:text-2xl '
+              className='text-start text-white lg:text-5xl md:text-4xl sm:text-3xl xs:text-2xl font-bold md:pl-52 xxs:pl-10'
             >
-              Introdução
+              Introdução:{' '}
             </span>
           </div>
-
-          <div className='flex flex-col justify-center h-5/6 items-center gap-5'>
-            <span
-              id='Paragraph'
-              className='text-white text-2xl text-justify font-normal w-full lg:w-1/2 lg:text-2xl md:text-1xl sm:text-lgxl xs:text-base '
-            >
+          <div
+            id='Paragraph'
+            className='lg:w-1/2 w-3/4 h-auto flex flex-col items-center justify-center bg-Anatonelly-Primary border border-yellow-500 lg:p-20 p-5 rounded-2xl shadow-2xl shadow-neutral-500 gap-3'
+          >
+            <p className='text-white lg:text-xl md:text-lg sm:text-base xs:text-sm'>
               Anatonelly LLC é uma empresa em ascensão no setor de transporte
               internacional, focada em importação e exportação. Nosso
               compromisso é fornecer serviços de alta qualidade e soluções
@@ -80,10 +79,10 @@ const index = () => {
               confiável em cada etapa do processo. Na Anatonelly LLC, estamos
               comprometidos em expandir as fronteiras de seus negócios,
               conectando você aos mercados globais de maneira eficiente e segura
-            </span>
-            <span
+            </p>
+            <p
               id='Paragraph'
-              className='text-white text-2xl text-justify font-normal w-full lg:w-1/2 lg:text-2xl md:text-1xl sm:text-lgxl xs:text-base '
+              className='text-white lg:text-xl md:text-lg sm:text-base xs:text-sm'
             >
               Destaques dos principais serviços oferecidos, como transporte
               terrestre, marítimo e aéreo, além de serviços alfandegários e de
@@ -91,7 +90,7 @@ const index = () => {
               serviços especializados para atender às demandas do transporte
               internacional. &quot; <br />
               <br />
-            </span>
+            </p>
           </div>
         </div>
         <div className='flex flex-col justify-center items-center gap-5 w-full bg-gradient-to-t from-Anatonelly-Primary via-purple-950 to-Anatonelly-Primary  text-black p-10 min-h-screen'>
@@ -226,7 +225,7 @@ const index = () => {
           }
         </div>
       </div>
-      <div className='bg-Anatonelly-Primary w-full h-auto  flex flex-col items-center justify-around'>
+      <div className='min-h-screen bg-Anatonelly-Primary w-full h-auto  flex flex-col items-center justify-center gap-10'>
         <div className='w-full flex flex-col items-start'>
           <span
             id='TitleLetter'
