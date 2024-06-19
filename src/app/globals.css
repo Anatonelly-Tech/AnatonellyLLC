@@ -31,3 +31,15 @@ body {
     text-wrap: balance;
   }
 }
+
+.Cotacao {
+  display: none;
+  position: fixed;
+}
+.Whatsapp {
+  filter: drop-shadow(0 0 0.75rem #6ee7b790);
+}
+.Whatsapp:hover .Cotacao {
+  display: block;
+  position: fixed;
+}
