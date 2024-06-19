@@ -5,10 +5,11 @@ import React, { useEffect } from 'react';
 // Utils
 import { cards1 } from '@/utils/cards';
 import { cards2 } from '@/utils/cards';
-
 // Components
 import CardGuidance from '@/components/CardGuidance';
 import Card3D from '@/components/Card3D';
+import Footer from '@/components/Footer';
+import WhatsButton from '@/components/WhatsButton';
 
 // Icons
 import { FaTruck } from 'react-icons/fa'; //transporte terrestre
@@ -39,11 +40,13 @@ const index = () => {
       id='AnatonellyLLC'
       className=' w-full h-auto flex flex-col -z-10  justify-center items-center'
     >
-      <div className='min-h-screen w-full flex flex-col items-center justify-center bg-Anatonelly-Primary p-5'>
+      <WhatsButton />
+      <div className='min-h-screen w-full flex flex-col items-center lg:justify-center justify-start lg:pt-0 pt-20 bg-Anatonelly-Primary p-5'>
         <img
           src='./AnatonellyLLC/AnatonellyLLC.svg'
-          className='w-1/3 h-2/5 filter animate-dropShadowPulse'
+          className='lg:w-1/3 w-full h-2/5 filter animate-dropShadowPulse'
           alt=''
+          draggable='false'
           srcset=''
         />
         <div className='animate-bounce text-center flex flex-col items-center justify-center gap-2 absolute mt-10 top-3/4'>
@@ -91,11 +94,11 @@ const index = () => {
             </span>
           </div>
         </div>
-        <div className='flex flex-col justify-center items-center gap-5 w-full bg-neutral-100 text-black p-10'>
+        <div className='flex flex-col justify-center items-center gap-5 w-full bg-gradient-to-t from-Anatonelly-Primary via-purple-950 to-Anatonelly-Primary  text-black p-10 min-h-screen'>
           <div className='w-full flex flex-col items-start'>
             <span
               id='TitleLetter'
-              className='text-start text-xl font-bold inline-block lg:text-5xl md:text-4xl sm:text-3xl xs:text-2xl '
+              className='text-start text-xl font-bold inline-block lg:text-5xl md:text-4xl sm:text-3xl xs:text-2xl text-white'
             >
               Nossa expertise abrange:{' '}
             </span>
@@ -103,43 +106,41 @@ const index = () => {
           <div className='flex flex-col items-center justify-center gap-10'>
             <div
               id='Paragraph'
-              className=' flex xxs:flex-col md:flex-row  items-center justify-center w-full gap-5 '
+              className=' flex items-center justify-center w-full gap-10 flex-wrap '
             >
               <CardGuidance
-                icon={<FaTruck size={30} className='invert' />}
+                icon={<FaTruck size={30} className='text-yellow-500' />}
                 title={'Transporte Terrestre'}
                 text={
                   'Navegamos pelas estradas com eficiência e segurança, oferecendo soluções de transporte terrestre ágeis e confiáveis para suas mercadorias, independentemente do destino ou da carga.'
                 }
               />
               <CardGuidance
-                icon={<GiCargoShip size={30} className='invert' />}
+                icon={<GiCargoShip size={30} className='text-yellow-500' />}
                 title={'Transporte Marítimo'}
                 text={
                   'Conduzimos sua carga pelos mares com expertise, utilizando rotas marítimas estratégicas e parcerias confiáveis para garantir entregas pontuais e econômicas em todo o mundo.'
                 }
               />
               <CardGuidance
-                icon={<GiAirplaneDeparture size={30} className='invert' />}
+                icon={
+                  <GiAirplaneDeparture size={30} className='text-yellow-500' />
+                }
                 title={'Transporte Aéreo'}
                 text={
                   'Elevamos suas expectativas com nossos serviços de transporte aéreo rápido e eficiente. Com acesso a uma extensa rede de rotas e operadores, garantimos que suas mercadorias cheguem ao destino final no menor tempo possível.'
                 }
               />
-            </div>
-            <div
-              id='Paragraph'
-              className='flex xxs:flex-col md:flex-row items-center justify-center w-full gap-5 '
-            >
+
               <CardGuidance
-                icon={<CiBoxes size={30} className='invert' />}
+                icon={<CiBoxes size={30} className='text-yellow-500' />}
                 title={'Serviços Alfandegários'}
                 text={
                   'Simplificamos os processos alfandegários complexos, fornecendo serviços de desembaraço aduaneiro rápidos e precisos para garantir a conformidade regulatória e a liberação rápida de sua carga.'
                 }
               />
               <CardGuidance
-                icon={<GiHarborDock size={30} className='invert' />}
+                icon={<GiHarborDock size={30} className='text-yellow-500' />}
                 title={'Serviços de Logística'}
                 text={
                   'Vamos além do transporte básico, oferecendo soluções de logística completas e personalizadas para otimizar sua cadeia de suprimentos. Desde o armazenamento até a distribuição, estamos aqui para atender às suas necessidades logísticas com eficiência e profissionalismo.'
@@ -148,7 +149,7 @@ const index = () => {
             </div>
             <span
               id='Paragraph'
-              className='  font-semibold w-full lg:p-16 md:gap-12 sm:gap-10 xs:gap-8 xxs:gap-6 text-justify lg:text-2xl md:text-1xl sm:text-lgxl xs:text-base'
+              className=' text-white font-semibold w-full lg:p-16 md:gap-12 sm:gap-10 xs:gap-8 xxs:gap-6 text-justify lg:text-2xl md:text-1xl sm:text-lgxl xs:text-base'
             >
               Na Anatonelly LLC, nossa prioridade é fornecer serviços de alta
               qualidade que atendam e superem as expectativas de nossos
@@ -159,7 +160,7 @@ const index = () => {
           </div>
         </div>
         <div className='bg-AnatonellyLLC h-auto w-full bg-cover z-20'>
-          <div className='w-full h-full bg-black/80 p-10 flex flex-col items-center justify-start gap-20'>
+          <div className='w-full min-h-screen h-full bg-black/80 p-10 flex flex-col items-center justify-start gap-20'>
             <div className='w-full flex flex-col items-start'>
               <span
                 id='TitleLetter'
@@ -176,7 +177,7 @@ const index = () => {
                 Informações sobre a equipe de especialistas em logística e
                 transporte da Anatonelly LLC.
               </p>
-              <p className='text-white text-sm lg:text-2xl md:text-1xl sm:text-lgxl xs:text-base'>
+              <p className='text-white text-sm lg:text-2xl md:text-1xl sm:text-lgxl xs:text-base text-justify'>
                 Na Anatonelly LLC, contamos com uma equipe de especialistas em
                 logística e transporte altamente qualificados e experientes,
                 dedicados a fornecer soluções personalizadas e eficientes para
@@ -194,11 +195,11 @@ const index = () => {
           </div>
         </div>
       </div>
-      <div className='w-full min-h-screen flex flex-col items-center justify-start bg-gradient-to-b from-white to-Anatonelly-Primary z-10 p-10 pb-36'>
+      <div className='w-full min-h-screen flex flex-col items-center justify-start bg-Anatonelly-Primary z-10 p-10 pb-36'>
         <div className='flex items-start justify-center w-full h-52'>
           <span
             id='TitleLetter'
-            className='text-center text-black text-xl font-bold w-full lg:text-5xl md:text-4xl sm:text-3xl xs:text-2xl '
+            className='text-center text-white text-xl font-bold w-full lg:text-5xl md:text-4xl sm:text-3xl xs:text-2xl '
           >
             Serviços:{' '}
           </span>
@@ -236,9 +237,9 @@ const index = () => {
         </div>
         <div
           id='Paragraph'
-          className='lg:w-1/2 w-3/4 h-auto flex items-center justify-center bg-neutral-200 lg:p-20 p-5 rounded-2xl shadow-2xl shadow-neutral-500'
+          className='lg:w-1/2 w-3/4 h-auto flex items-center justify-center bg-Anatonelly-Primary border border-yellow-500 lg:p-20 p-5 rounded-2xl shadow-2xl shadow-neutral-500'
         >
-          <p className='text-neutral-700 lg:text-2xl md:text-1xl sm:text-lgxl xs:text-base'>
+          <p className='text-white lg:text-2xl md:text-1xl sm:text-lgxl xs:text-base'>
             Na Anatonelly LLC, conectamos seus negócios aos principais destinos
             globais, facilitando o comércio internacional de e para a China e os
             Estados Unidos. Com nossa expertise em transporte terrestre,
@@ -252,7 +253,7 @@ const index = () => {
           </p>
         </div>
       </div>
-      <div className='w-full bg-gradient-to-t md:h-screen xxs:h-auto from-neutral-200 to-Anatonelly-Primary flex flex-col items-start justify-evenly'>
+      <div className='w-full bg-gradient-to-t md:h-screen xxs:h-auto from-Anatonelly-Secundary to-Anatonelly-Primary flex flex-col items-start justify-evenly'>
         <span
           id='TitleLetter'
           className='text-start text-white font-bold inline-block pl-20 lg:text-5xl md:text-4xl sm:text-3xl xs:text-2xl'
@@ -276,20 +277,7 @@ const index = () => {
           }
         </div>
       </div>
-      <div className='flex md:w-1/3 xxs:w-full gap-5 pb-10 xxs:pt-10 md:pt-0 items-center justify-center'>
-        <a href='#'>
-          <img draggable={false} src='/Footer/Facebook.png' alt='' />
-        </a>
-        <a href='#'>
-          <img draggable={false} src='/Footer/X.png' alt='' />
-        </a>
-        <a href='https://www.instagram.com/transportes.global'>
-          <img draggable={false} src='/Footer/Instagram.png' alt='' />
-        </a>
-        <a href='https://wa.me/553199351905/?text=Ol%C3%A1%2C%20gostaria%20de%20cotar%20um%20frete%20!%0AOrigem%20%3A%20%0ADestino%20%3A%20%0APeso%20%3A%20%0AVolume%20%3A%20%0AValor%20da%20NF%20%3A%20'>
-          <img draggable={false} src='/Footer/Whatsapp.png' alt='' />
-        </a>
-      </div>
+      <Footer />
     </div>
   );
 };

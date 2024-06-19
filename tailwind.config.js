@@ -11,7 +11,7 @@ module.exports = {
     extend: {
       colors: {
         Anatonelly: {
-          Primary: '#0c0035',
+          Primary: '#0C0341',
           Secundary: '#0a0129',
         },
       },

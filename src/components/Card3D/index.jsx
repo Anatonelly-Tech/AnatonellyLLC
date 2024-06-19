@@ -21,12 +21,14 @@ const Card3D = ({ img, title, text }) => {
         dragElastic={0.18}
         dragConstraints={{ top: 0, right: 0, bottom: 0, left: 0 }}
         whileTap={{ cursor: 'grabbing' }}
-        className=' min-w-[200px] max-w-[500px] h-auto bg-neutral-300 flex flex-col items-center justify-center rounded-xl border-4 border-white px-10 py-6 cursor-grab relative shadow-neutral-800 shadow-xl'
+        className=' min-w-[200px] max-w-[500px] h-72 bg-Anatonelly-Primary flex flex-col items-center justify-center rounded-xl border-2 border-yellow-500 px-7 py-2 cursor-grab relative shadow-neutral-800 shadow-xl'
       >
         {/* title */}
-        <div className='text-2xl mb-6 font-extrabold'>{title}</div>
+        <div className='text-2xl mb-6 font-extrabold text-yellow-500'>
+          {title}
+        </div>
         {/* text */}
-        <div className='max-w-60 mb-6 text-black'>{text}</div>
+        <div className='max-w-60 mb-6 text-white'>{text}</div>
         {/* img */}
         <motion.div
           style={{ x, y, rotateX, rotateY, z: 100 }}
@@ -34,7 +36,7 @@ const Card3D = ({ img, title, text }) => {
         >
           <img
             draggable='false'
-            className='bg-neutral-700 w-36 rounded-full h-36 object-cover border-4 border-white shadow-xl'
+            className='bg-neutral-700 w-36 rounded-full h-36 object-cover border-2 border-yellow-500 shadow-xl'
             src={img}
             alt=''
           />

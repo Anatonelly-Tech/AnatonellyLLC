@@ -5,7 +5,7 @@ import Content from '@/components/Content';
 
 const page = () => {
   return (
-    <div >
+    <div className='overflow-hidden'>
       <Content />
     </div>
   );
